@@ -4,20 +4,40 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>React Hooks Part 1</title>
 
 		<link rel="stylesheet" href="dist/reset.css">
 		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/black.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
 
 		<!-- Theme used for syntax highlighted code -->
 		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+
+		<style>
+			.slides {
+				width: 1020px !important;
+			}
+			.code-wrapper {
+				font-size: 0.44em !important;
+			}
+		</style>
 	</head>
 	<body>
 		<div class="reveal">
 			<div class="slides">
-				<section>Slide 1</section>
-				<section>Slide 2</section>
+				<section data-markdown="src/01-intro.md"></section>
+				<section data-markdown="src/02-state.md"></section>
+				<section data-markdown="src/03-lifecycles.md"></section>
+				<section data-markdown="src/04-component-types.md"></section>
+				<section data-markdown="src/05-class-state.md"></section>
+				<section data-markdown="src/06-react-hooks.md"></section>
+				<section data-markdown="src/07-use-state-hooks.md"></section>
+				<section data-markdown="src/08-use-effect-hooks.md"></section>
+				<section data-markdown="src/09-use-ref-hooks.md"></section>
+				<section data-markdown="src/10-use-memo-hooks.md"></section>
+				<section data-markdown="src/11-use-reducer-hooks.md"></section>
+				<section data-markdown="src/12-custom-hooks.md"></section>
+				<section data-markdown="src/13-hooks-flow.md"></section>
 			</div>
 		</div>
 
@@ -31,7 +51,7 @@
 			// - https://revealjs.com/config/
 			Reveal.initialize({
 				hash: true,
-
+				margin: 0.01,
 				// Learn about plugins: https://revealjs.com/plugins/
 				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
 			});
